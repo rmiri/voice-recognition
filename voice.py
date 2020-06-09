@@ -11,5 +11,7 @@ words = recognizer.recognize_google(audio)
 matches = re.search("my name is (.*)",words)
 if matches:
     print(f"hey,{matches[1]}.")
-else:
+elif words == "hello":
     print("hey you.")
+else:
+    print("I CANT HEAR YOU")
